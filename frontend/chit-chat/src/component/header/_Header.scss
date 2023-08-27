@@ -1,0 +1,77 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10dvh;
+    width: 100%;
+    // margin: 2vmax;
+    padding: 1vmax;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    background-color: azure;
+    img{
+        margin-left: auto;
+        width: 35px;
+        height: 35px;
+        margin: 2vmax;
+        border-radius: 50%;
+        // flex: 0.1;
+    }
+    span{
+        // flex: 1;
+        font-weight: 800;
+    }
+    p{
+        // margin-right: auto;
+        position: relative;
+        margin: 1vmax;
+        padding: 0.5vmax;
+        display: flex;
+        align-items: center;
+        svg{
+            margin: 0.5vmax;
+        }
+    }
+
+
+}
+
+.NotificationsBadge{
+    position: absolute;
+    top :0;
+    color:white;
+    background-color: red;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.2vmax;
+    font-size: 0.7vmax;
+    
+
+}
+
+@media(max-width:600px){
+    .header{
+        img{
+            width: 40px;
+        height: 40px;
+        }
+        span{
+            // flex: 1;
+            font-size: 2.5vmax;
+        }
+        p{
+            svg{
+                width: 3vmax;
+                height: 3vmax;
+            }
+            .NotificationsBadge{
+                font-size: 1.5vmax;
+            }
+        }
+
+
+    }
+}
+

@@ -1,0 +1,158 @@
+@import "../../base";
+
+.chatbox {
+    height: 90%;
+    width: 60%;
+    background-color: azure;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeChatbox {
+    height: 90%;
+    width: 60%;
+    background-color: azure;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    border-radius: 3px;
+
+    .chatBoxHeader {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5vmax 1vmax;
+        box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+        background-color: white;
+
+        p {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        span {
+            text-align: center;
+            margin: 0.5vmax;
+            padding: 0.2vmax 0.4vmax;
+            font-weight: 500;
+        }
+
+        .backIcon {
+            display: none;
+        }
+    }
+
+
+
+
+}
+
+.chatBoxMainContainer {
+    width: 100%;
+    height: 88%;
+    padding: 1vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    form {
+        width: 100%;
+        height: 10%;
+        margin: 0.5vmax 0;
+        padding: 0 1vmax;
+        box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+        border-radius: 20px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        textarea {
+
+            padding: 0.5vmax;
+            border-radius: 20px;
+            width: 90%;
+            height: 95%;
+            border: none;
+            white-space: normal;
+            resize: none;
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        button {
+            margin-left: auto;
+            border: none;
+            background-color: white;
+            text-align: center;
+            margin-right: 0.5vmax;
+        }
+    }
+}
+
+@media(max-width:600px) {
+
+    .activeChatbox,
+    .chatbox {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 90%;
+        transition: all 0.3s linear;
+        right: 0;
+
+
+
+    }
+
+    .chatbox {
+        transform: translateX(100%);
+
+
+
+    }
+
+    .activeChatbox {
+        transform: translateX();
+
+        .chatBoxHeader {
+
+            span {
+                font-size: 2.5vmax;
+            }
+
+            .backIcon {
+                display: block;
+            }
+
+
+
+        }
+
+        .chatBoxMainContainer {
+            form {
+
+                textarea {
+                    font-size: 2.3vmax;
+                }
+
+                button {
+                    svg {
+                        width: 5vmax;
+                        height: 5vmax;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

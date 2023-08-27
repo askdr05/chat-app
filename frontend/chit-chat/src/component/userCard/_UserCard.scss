@@ -1,0 +1,62 @@
+.UserCard {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5vmax;
+    height: 10dvh;
+    border-radius: 2px;
+    margin: 1.5vmax 0;
+    background-color: rgb(229, 223, 223);
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 1.5vmax;
+        // flex: 0.1;
+        border-radius: 50%;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        font-size: 0.8vmax;
+        font-weight: 600;
+        flex: 1;
+        margin: 0;
+        .Email,.Name {
+            font-size: 1vmax;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: rgb(136, 252, 159)
+    }
+}
+
+@media(max-width:600px) {
+    .UserCard {
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 2vmax;
+        }
+
+        p {
+            .Email,.Name {
+                font-size: 2vmax;
+            }
+            
+        }
+
+        .latestMessage {
+            font-size: 1.5vmax;
+        }
+    }
+
+
+
+}

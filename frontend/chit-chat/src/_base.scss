@@ -1,0 +1,36 @@
+
+
+$text-color :#16181b;
+$text-color-secondary: #b1bdb4;
+
+
+$black-primary : #16181b;
+$black-secondary : #121417;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: $text-color;
+    background-attachment: fixed;
+    letter-spacing: 0.1px;
+    // font-family: 'Roboto', 'sans-serif';
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// /* Firefox */
+// input[type="number"] {
+//   -moz-appearance: textfield;
+// }

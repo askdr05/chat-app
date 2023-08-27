@@ -1,0 +1,59 @@
+.groupNameUpdate{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2vmax;
+    input{
+        width: 60%;
+        margin: 0.5vmax;
+       
+        padding: 0.2vmax;
+    }
+    button{
+        width: 20%;
+        border: none;
+        border-radius: 15px;
+        background-color: #0d6efd;
+        color: white;
+        height: 2vmax;
+        &:hover{
+            background-color:#2167d0;
+        }
+    }
+}
+
+.imageContainer{
+    width: 100%;
+    height: 30dvh;
+    display: flex;
+    // background-color: rgb(175, 177, 177);
+    img{
+        height: 12vmax;
+        width: 12vmax;
+        margin: auto;
+        border-radius: 50%;
+    }
+}
+
+
+@media(max-width:600px){
+    .groupNameUpdate{
+        input{
+            width: 58%;
+            margin: 1.1vmax;
+            padding: 1vmax;
+        }
+
+        button{
+            height: 4vmax;
+        }
+    }
+
+    .imageContainer{
+       img{
+        height: 15vmax;
+        width: 15vmax;
+       }
+    }
+}
