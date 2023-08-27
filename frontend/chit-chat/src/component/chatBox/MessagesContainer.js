@@ -19,6 +19,7 @@ const MessagesContainer = ({ typing }) => {
 
     const { messages, loading } = useSelector((state) => state.message)
     const { user } = useSelector((state) => state.user)
+    
 
 
 
@@ -29,10 +30,7 @@ const MessagesContainer = ({ typing }) => {
        
     }, [dispatch, selectedChat])
 
-    // useEffect(() => {
-    //     console.log(typing)
-   
-    // }, [typing])
+  
 
     return (
 
